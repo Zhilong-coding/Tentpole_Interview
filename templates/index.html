@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Render a Graph</title>
+</head>
+
+<body>
+    <h1>Render a Graph</h1>
+    <form action="/graph" method="post" enctype="multipart/form-data" class="center">
+        <input type="text" name="firstname" id="firstname" placeholder="Frist name" required/>
+        <input type="text" name="lastname" id="lastname" placeholder="Last name" required/>
+        <input type="date" name="dateofbirth" id="dateofbirth" required/>
+        <div><input type="file" name="datafile" id="datafile" required/></div>
+        <button type="submit">Render</button>
+    </form>
+</body>
+
+</html>
