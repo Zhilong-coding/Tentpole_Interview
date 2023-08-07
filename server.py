@@ -3,7 +3,6 @@ from flask import Flask, render_template, request
 import openpyxl
 from waitress import serve
 from pandas import pandas as pd
-from plotly import graph_objects as go
 import matplotlib.pyplot as plt
 import numpy as np
 from io import BytesIO

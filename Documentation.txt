@@ -1,0 +1,15 @@
+Documentation on TentpoleInterview
+
+FLASK was chosen for this project as the web framework.
+It was chosen with points below in consideration:
+- easier to use for simple cases.
+- smaller size of the code base.
+- familairity in skillset.
+
+Some of the libery chosen are:
+
+Panda - Used to read and write excel files
+matplotlib - Used to draw the graph
+
+
+login.xlsx is used to store the user data
