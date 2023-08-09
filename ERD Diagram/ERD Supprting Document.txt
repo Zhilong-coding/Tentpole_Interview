@@ -1,0 +1,25 @@
+# Supporting Document for the ERD Diagram
+
+With Relational Database and SQL Server chosen for this proposal:
+
+For simplicity and performance concern I have created 5 tables:
+-Regions
+-Users
+-Roles
+-RegionalRoles
+-RegionalUserRoles
+
+We can proceed to create Users, Roles and Regions as we wish.
+
+Then we can link specific roles to each regions if they choose to have
+different roles or permission for these roles in each region.
+
+Once the roles for each region is defined and linked, we can proceed with
+linking the RegionalRoles to the Users. This can verify the User for each region and the roles it has for the region.
+
+For Data we can verify the permision on a RegionalRole level that can be assign to each users as stated above.
+
+Lastly for global tenant, linking Users to multiple RegionalRoles will be able to fulfill the requirement of accessing all regions data.
+
+This solution is highly scalable as adding new tenant and users are easy and simple.
+Adding new fields are less complex as the solution uses a Junction Table for linking data.
